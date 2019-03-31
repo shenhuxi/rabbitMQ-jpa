@@ -4,8 +4,6 @@ import com.zpself.jpa.repository.BaseRepository;
 import com.zpself.module.system.entity.User;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 /**
  * 描述:
  * 作者: qinzhw
@@ -13,6 +11,4 @@ import java.util.List;
  */
 @Repository
 public interface UserRepository extends BaseRepository<User,Long> {
-
-	//User findByUserName(String account);
 }

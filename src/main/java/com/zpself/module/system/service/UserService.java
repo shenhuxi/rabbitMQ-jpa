@@ -1,7 +1,7 @@
-package com.dingxin.gdsj.modules.system.service;
+package com.zpself.module.system.service;
 
-import com.dingxin.gdsj.common.jpa.service.BaseService;
-import com.dingxin.gdsj.modules.system.entity.User;
+import com.zpself.jpa.service.BaseService;
+import com.zpself.module.system.entity.User;
 
 import java.util.List;
 
@@ -12,18 +12,8 @@ import java.util.List;
  */
 public interface UserService extends BaseService<User,Long> {
 
-    User findByAccount(String account);
-    
-    User findByUuid(String uuid);
 
-	boolean batchDel(List<Long> list);
-
-	void batchImport(List<User> list);
-
-
-    List<String> getAllClass();
-
-	List<User> findByName(String teacherName);
+	User findByUserName(String teacherName);
 
     
 }

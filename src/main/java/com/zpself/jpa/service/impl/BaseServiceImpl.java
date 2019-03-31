@@ -1,6 +1,8 @@
-package com.zpself.jpa.service;
+package com.zpself.jpa.service.impl;
 
 import com.zpself.jpa.former.MyResultTransformer;
+import com.zpself.jpa.repository.BaseRepository;
+import com.zpself.jpa.service.BaseService;
 import com.zpself.jpa.repository.BaseRepository;
 import com.zpself.jpa.utils.BeanUtil;
 import org.hibernate.SQLQuery;
