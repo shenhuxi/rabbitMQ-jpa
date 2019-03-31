@@ -1,6 +1,7 @@
-package com.zpself.jpa.entity;
+package com.zpself.module.system.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.zpself.jpa.entity.BusinessEntity;
 import com.zpself.jpa.utils.Encryption;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -25,11 +26,13 @@ import java.util.Date;
 @Table(name="S_USER")
 @DynamicInsert	/*插入时只插入非null属性，其他取数据库默认值*/
 @DynamicUpdate
-public class SysUser extends BusinessEntity{
-
-
+public class User extends BusinessEntity{
     public static final String INITPASSWORD = "666666";
     private static final long serialVersionUID = -1703630040908311405L;
+    @NotNull
+    @Column(unique=true)
+    @ApiModelProperty("登陆名 4A账号")
+    private String userName;
 
     @ApiModelProperty("密码")
     @Encryption
@@ -57,10 +60,7 @@ public class SysUser extends BusinessEntity{
     @ApiModelProperty("最后登录时间")
     private Date lastLoginTime;
 
-    @NotNull
-    @Column(unique=true)
-    @ApiModelProperty("登陆名 4A账号")
-    private String userName;
+
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
