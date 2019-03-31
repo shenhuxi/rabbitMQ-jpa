@@ -1,6 +1,6 @@
 package com.zpself.jpa.search.original;
 
-import com.dingxin.data.jpa.utils.ColumnUtil;
+import com.zpself.jpa.utils.ColumnUtil;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;

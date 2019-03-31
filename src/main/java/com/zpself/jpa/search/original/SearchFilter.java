@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import static com.dingxin.data.jpa.search.original.Operator.BTW;
+import static com.zpself.jpa.search.original.Operator.BTW;
 
 public class SearchFilter {
 	

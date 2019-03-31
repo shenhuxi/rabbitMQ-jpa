@@ -1,7 +1,7 @@
 package com.zpself.jpa.service;
 
-import com.dingxin.data.jpa.former.MyResultTransformer;
-import com.dingxin.data.jpa.repository.CommonRepository;
+import com.zpself.jpa.former.MyResultTransformer;
+import com.zpself.jpa.repository.CommonRepository;
 import org.hibernate.SQLQuery;
 import org.hibernate.transform.Transformers;
 import org.slf4j.Logger;

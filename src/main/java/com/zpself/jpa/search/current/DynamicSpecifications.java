@@ -8,8 +8,8 @@ package com.zpself.jpa.search.current;
  * 
  */
 
-import com.dingxin.data.jpa.utils.ColumnUtil;
-import com.dingxin.data.jpa.utils.StringUtils;
+import com.zpself.jpa.utils.ColumnUtil;
+import com.zpself.jpa.utils.StringUtils;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.support.DefaultConversionService;

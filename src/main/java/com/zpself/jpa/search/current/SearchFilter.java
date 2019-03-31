@@ -1,7 +1,7 @@
 package com.zpself.jpa.search.current;
 
-import com.dingxin.data.jpa.utils.ReflectionUtils;
-import com.dingxin.data.jpa.utils.StringUtils;
+import com.zpself.jpa.utils.ReflectionUtils;
+import com.zpself.jpa.utils.StringUtils;
 import org.springframework.data.domain.Sort.Order;
 
 import java.util.*;

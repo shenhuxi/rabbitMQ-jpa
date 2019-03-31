@@ -1,6 +1,6 @@
 package com.zpself.jpa.search.current;
 
-import com.dingxin.data.jpa.search.current.SearchFilter.Operator;
+import com.zpself.jpa.search.current.SearchFilter.Operator;
 
 import javax.persistence.Query;
 import java.util.ArrayList;

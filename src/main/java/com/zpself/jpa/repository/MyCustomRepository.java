@@ -1,10 +1,11 @@
 package com.zpself.jpa.repository;
 
-import com.dingxin.data.jpa.former.MyResultTransformer;
-import com.dingxin.data.jpa.search.current.DynamicSpecifications;
-import com.dingxin.data.jpa.search.current.QLFinder;
-import com.dingxin.data.jpa.search.current.SearchFilter;
-import com.dingxin.data.jpa.utils.BeanUtil;
+
+import com.zpself.jpa.former.MyResultTransformer;
+import com.zpself.jpa.search.current.DynamicSpecifications;
+import com.zpself.jpa.search.current.QLFinder;
+import com.zpself.jpa.search.current.SearchFilter;
+import com.zpself.jpa.utils.BeanUtil;
 import org.hibernate.SQLQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -81,7 +82,7 @@ public class MyCustomRepository<T, ID extends Serializable> extends SimpleJpaRep
 
 	@Override
 	public Page<T> findPageByNativeSQL(String sql, PageRequest pageRequest) {
-		return findPageByNativeSQLAndParams(sql, new HashMap<>(), getDomainClass(), pageRequest);
+		return findPageByNativeSQLAndParams(sql, new HashMap<String, Object>(), getDomainClass(), pageRequest);
 	}
 
 
