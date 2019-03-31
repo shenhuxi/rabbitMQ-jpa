@@ -7,7 +7,7 @@ import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
 
 @Configuration
-@EnableJpaRepositories(basePackages = "com.zpself.**.repository",
+@EnableJpaRepositories(basePackages = "com.zpself.module.system.repository",
                             repositoryFactoryBeanClass = MyRepositoryFactoryBean.class)
 @EnableSpringDataWebSupport  
 public class JpaDataConfig {  

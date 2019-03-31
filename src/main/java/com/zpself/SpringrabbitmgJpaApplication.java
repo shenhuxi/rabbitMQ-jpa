@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @RestController
-public class SpringSecurityApplication {
+public class SpringrabbitmgJpaApplication {
     @Autowired
     private MsgProducer msgProducer;
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringSecurityApplication.class, args);
+        SpringApplication.run(SpringrabbitmgJpaApplication.class, args);
     }
    /* @GetMapping("/hello")
     public String hello(){
