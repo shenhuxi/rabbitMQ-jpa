@@ -1,8 +1,7 @@
 package com.zpself.module.system.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.zpself.jpa.entity.BusinessEntity;
-import com.zpself.jpa.utils.Encryption;
+import com.zpself.module.common.entity.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.DynamicInsert;
@@ -26,7 +25,7 @@ import java.util.Date;
 @Table(name="S_USER")
 @DynamicInsert	/*插入时只插入非null属性，其他取数据库默认值*/
 @DynamicUpdate
-public class User extends BusinessEntity{
+public class User extends BaseEntity {
     public static final String INITPASSWORD = "666666";
     private static final long serialVersionUID = -1703630040908311405L;
     @NotNull
@@ -35,7 +34,6 @@ public class User extends BusinessEntity{
     private String userName;
 
     @ApiModelProperty("密码")
-    @Encryption
     private String passWord;
 
     @NotNull
@@ -139,7 +137,6 @@ public class User extends BusinessEntity{
     }
 
     @ApiModelProperty("身份证")
-    @Encryption
     private String idCard;
 
 

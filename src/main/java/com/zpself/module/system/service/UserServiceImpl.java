@@ -1,7 +1,7 @@
 package com.zpself.module.system.service;
 
 import com.zpself.jpa.repository.BaseRepository;
-import com.zpself.jpa.service.BaseServiceImpl;
+import com.zpself.jpa.service.impl.BaseServiceImpl;
 import com.zpself.module.system.entity.User;
 import org.springframework.stereotype.Service;
 

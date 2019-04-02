@@ -1,8 +1,8 @@
 package com.zpself.module.system.controller;
 
-import com.zpself.jpa.controller.BaseController;
-import com.zpself.jpa.dto.ResultObject;
 import com.zpself.jpa.utils.MD;
+import com.zpself.jpa.utils.ResultObject;
+import com.zpself.module.common.BaseController;
 import com.zpself.module.system.entity.User;
 import com.zpself.module.system.service.UserService;
 import io.swagger.annotations.Api;
@@ -65,12 +65,12 @@ public class SystemController extends BaseController {
     	//subject.logout();
     	return ResultObject.ok("已注销");
     }
-    @PostMapping
+    @PostMapping("/add")
     @ApiOperation(value= "用户新增", notes="" )
     @ApiImplicitParam(name = "user", value = "具体业务对象json", required = true, dataType="User" ,paramType = "body")
     public ResultObject<?> add(@Valid @RequestBody User user, BindingResult br){
         if (br.hasErrors()) {
-            return ResultObject.error(getValidErrorMsg(br));
+            return ResultObject.error("参数错误");//getValidErrorMsg(br)
         }
         user.setPassWord(MD.md5(initPassword+user.getUserName()));
         User findByUserName = userService.findByUserName(user.getUserName());
