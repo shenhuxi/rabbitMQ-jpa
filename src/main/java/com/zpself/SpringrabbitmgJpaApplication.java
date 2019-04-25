@@ -17,17 +17,17 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableScheduling
 @EnableAsync
 public class SpringrabbitmgJpaApplication {
-    @Autowired
-    private MsgProducer msgProducer;
+    //@Autowired
+    //private MsgProducer msgProducer;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringrabbitmgJpaApplication.class, args);
     }
-   /* @GetMapping("/hello")
+    @GetMapping("/hello")
     public String hello(){
         return "hello萨达萨达撒  ";
-    }*/
-   @GetMapping("/sendMsgA")
+    }
+   /*@GetMapping("/sendMsgA")
     public String sendMsgA(String contans,String acount){
         msgProducer.sendMsgA(contans, acount);
         return "sendMsgA调用成功！  ";
@@ -36,5 +36,5 @@ public class SpringrabbitmgJpaApplication {
     public String sendMsgB(String contans){
         msgProducer.sendMsgB(contans);
         return "sendMsgB调用成功！  ";
-    }
+    }*/
 }
