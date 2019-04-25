@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by zengpeng on 2019/3/30
  */
-@Component
+//@Component
 public class MsgReceiver {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

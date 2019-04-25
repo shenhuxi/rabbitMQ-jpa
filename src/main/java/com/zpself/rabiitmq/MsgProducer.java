@@ -14,7 +14,7 @@ import java.util.UUID;
 /**
  * Created by zengpeng on 2019/3/30
  */
-@Component
+//@Component
 public class MsgProducer implements RabbitTemplate.ConfirmCallback {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

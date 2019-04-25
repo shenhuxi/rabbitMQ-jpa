@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Scope;
 /**
  * Created by zengpeng on 2019/3/30
  */
-@Configuration
+//@Configuration
 public class RabbitConfig {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
